@@ -17,7 +17,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: '1.21'   
+        go-version: '1.21'
 
     - name: Build
       run: |
@@ -31,7 +31,7 @@ jobs:
         kill $!
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dummy-server-bin
         path: dummy-server.bin
