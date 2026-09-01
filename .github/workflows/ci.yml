@@ -22,7 +22,7 @@ jobs:
 
     - name: Build
       run: |
-        go build -o dummy-server.bin ./...
+        go build -o dummy-server.bin main.go
 
     - name: Test server
       run: |
